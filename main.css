@@ -97,8 +97,60 @@ nav a {
     padding: 2em;
 }
 
+.project-preview ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bgHeader);
+    opacity: 0.8; /* Adjust the opacity to achieve the desired transparency */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
 
+.project-preview {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.project-preview h3 {
+    display: block;
+
+}
+
+.project-preview a {
+    color: black;
+}
+
+.project-article {
+    text-align: center;
+
+}
+
+.date {
+    text-align: right;
+    margin-right: 10em;
+}
+
+.project-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20vw;
+}
+
+.project-info-box {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    flex: 1 1 200px;
+    text-align: center;
+    box-sizing: border-box;
+}
 
 /* Themes */
 .lawyer-theme {
