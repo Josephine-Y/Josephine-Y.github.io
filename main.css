@@ -1,0 +1,161 @@
+:root{
+    /* Lawyer */
+    --white: #F5F5EF;
+    --beige: #B69D74;
+    --blue: #1F2839;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-size: 1.4em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--bgHeader);
+    color: var(--cHeader);
+    text-align: center;
+    border-bottom: 1px solid var(--beige);
+    /* position: fixed;
+    width: 100%;    
+    z-index: 1000;
+    transition: top 0.3s; */
+}
+
+header.hidden {
+    top: -100px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+nav a {
+    color: var(--cHeader);
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background: var(--bgHeader);
+    /* background: linear-gradient(to bottom, var(--bgHeader) 0%, var(--bgHeader) 50%, var(--bgHeader) 50%, var(--bg) 100%); Gradient stops halfway */
+    color: var(--cHeader);
+    padding-left: 10vw;
+    padding-top: 2em;
+}
+
+.landing-page h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.landing-page a {
+    color: var(--cHeader);
+    margin-right: 1em;
+}
+
+.btn {
+    background: var(--bgHeader);
+    color: var(--cHeader);
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: 1px solid var(--cHeader);
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 1.5em;
+}
+
+.about-me {
+    background: var(--bg);
+    /* background: linear-gradient(to bottom, var(--bgHeader), var(--bg)); */
+    display: flex;
+    align-items: flex-start;
+    padding: 2em;
+    margin-left: 4%;
+    /* margin-top: 2em; */
+}
+
+.about-me img {
+    height: 500px;
+    border-radius: 10%;
+    margin: 2em;
+}
+
+.portfolio {
+    background: var(--bg);
+    padding: 2em;
+}
+
+.project-preview ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bgHeader);
+    opacity: 0.8; /* Adjust the opacity to achieve the desired transparency */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.project-preview {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-preview h3 {
+    display: block;
+
+}
+
+.project-preview a {
+    color: black;
+}
+
+.project-article {
+    text-align: center;
+
+}
+
+.date {
+    text-align: right;
+    margin-right: 10em;
+}
+
+.project-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20vw;
+}
+
+.project-info-box {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    flex: 1 1 200px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Themes */
+.lawyer-theme {
+    --bg: var(--white);
+    --fontColor: var(--blue);
+    --bgHeader: var(--blue);
+    --cHeader: var(--beige);
+}
