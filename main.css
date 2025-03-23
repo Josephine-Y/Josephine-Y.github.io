@@ -152,6 +152,11 @@ nav a {
     box-sizing: border-box;
 }
 
+article p {
+    margin: 4em;
+    text-align: left;
+}
+
 /* Themes */
 .lawyer-theme {
     --bg: var(--white);
