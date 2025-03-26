@@ -31,6 +31,7 @@ header.hidden {
 }
 
 nav {
+    text-align: center;
     display: flex;
     justify-content: flex-end;
     padding: 1em;
@@ -41,6 +42,10 @@ nav a {
     color: var(--cHeader);
     text-decoration: none;
     margin-left: 1em;
+}
+
+a:hover {
+    color: var(--bg);
 }
 
 .landing-page {
@@ -95,6 +100,7 @@ nav a {
 .portfolio {
     background: var(--bg);
     padding: 2em;
+    margin: 1em;
 }
 
 .project-preview ::before{
@@ -125,6 +131,10 @@ nav a {
     color: black;
 }
 
+.project-preview a:hover {
+    color: var(--cHeader);
+}
+
 .project-article {
     text-align: center;
 
@@ -139,22 +149,88 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin: 20vw;
+    gap: 40px;
+    margin: 10vw;
+    margin-top: 2em;
 }
 
 .project-info-box {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    flex: 1 1 200px;
+    padding: 0.2em 0.5em;
+    flex: 0 0 250px;
     text-align: center;
     box-sizing: border-box;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-info-box p {
+    margin: 1em;
 }
 
 article p {
     margin: 4em;
     text-align: left;
+}
+
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; /*Order: front*/
+    top: 0; /*Position from the top*/
+    left: 0;
+    background-color: var(--bgHeader);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sideNavOpen {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 2em;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--cHeader);
+}
+
+.sideNav a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--cHeader);
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    /* transition: margin-left .5s;
+    padding: 16px; */
+    background: var(--bgHeader);
+    margin: 0em;
+}
+
+footer {
+    text-align: center;
+    color: var(--cHeader);
+    background: var(--bgHeader);
+    /* padding: 0.2em; */
+    margin: -2em;
+
 }
 
 /* Themes */

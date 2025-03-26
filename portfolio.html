@@ -10,7 +10,8 @@
 
 <body class="lawyer-theme">
     <header>
-        <nav style = "text-align: center">
+        <!-- <span id="sideNavOpen" onclick="openNav()">&#9776;</span> -->
+        <nav>
             <a href="index.html">Home</a>
             <a href="Resume.pdf" target="_blank">Resume</a>
             <a href="portfolio.html">Portfolio</a>
@@ -19,40 +20,50 @@
 
     </header>
 
-    <div class="sideNav">
+    <!-- <div class="sideNav">
         <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-        
-    </div>
+        <a href="Portfolio/CIV102Bridge.html">CIV 102 Bridge Project</a>
+    </div> -->
     
-    <section class="portfolio">
-        <h2>Engineering Portfolio Projects</h2>
-            <article class="project-preview">
-            <h3><a href="Portfolio/CIV102Bridge.html">CIV 102 Bridge Project</a></h3>
-                <ul>
-                    <li>Collaborated in a team of 3</li>
-                    <li>Coded Matlab to calculate stress and strain under bending</li>
-                    <li>Constructed bridge from a single piece of Matboard and contact cement</li>
-                    <li>Iterated over multiple design concepts and optimized physical shape and dimensions aided by Matlab</li>
-                </ul>
-            </article>
+    <div id="main">
+        <section class="portfolio">
+            <h2>Engineering Portfolio Projects</h2>
+                <!-- <p>I've worked on various projects throughout recent years and learned valuable skills from each!</p> -->
+                <!-- <form>
+                    <input type="text" placeholder="Search Projects">
+                </form> -->
 
-            <article class="project-preview">
-            <h3><a href="Portfolio/PraxisI.html">ESC 101 Praxis I Design Project</a></h3>
-                <ul>
-                    <li>Delivered Design Brief outlining an opportunity observed in the Engineering Science community</li>
-                    <li>Developed requirements using engineering standards</li>
-                    <li>Delivered Design Report outlining a solution developed through testing and research</li>
-                </ul>
-            </article>
+                <article class="project-preview">
+                <h3><a href="Portfolio/CIV102Bridge.html">CIV 102 Bridge Project</a></h3>
+                    <ul>
+                        <li>Collaborated in a team of 3 to construct a bridge using a single piece of Matboard and contact cement</li>
+                        <li>Coded in Matlab to digitally calculate stress and strain under bending</li>
+                        <li>Iterated over multiple design concepts and optimized the physical shape and dimensions before constructing</li>
+                    </ul>
+                </article>
 
-            <article class="project-preview">
-            <h3><a href="Portfolio/PraxisII.html">ESC 102 Praxis II Design Project</a></h3>
-                <ul>
-                    <li>Interacted with a community in local area to understand their lived experiences and potential improvements</li>
-                    <li></li>
-                </ul>
-            </article>
-            
-    </section>
+                <article class="project-preview">
+                <h3><a href="Portfolio/PraxisI.html">ESC 101 Praxis I Design Project</a></h3>
+                    <ul>
+                        <li>Delivered a Design Brief outlining an opportunity observed in the Engineering Science community</li>
+                        <li>Developed requirements using engineering standards</li>
+                        <li>Delivered a Design Report outlining a solution developed through testing and research</li>
+                    </ul>
+                </article>
 
+                <article class="project-preview">
+                <h3><a href="Portfolio/PraxisII.html">ESC 102 Praxis II Design Project</a></h3>
+                    <ul>
+                        <li>Interacted with the community at a local pottery studio to understand their lived experiences and discover potential improvements</li>
+                        <li>Delivered a Request for Proposal outlining a design space for solutions to pain associated with throwing on the pottery wheel</li>
+                        <li>Iterated through the Engineering Design Process to arrive at a solution to recommend to the community    </li>
+                    </ul>
+                </article>
+                
+        </section>
+    </div>
+
+    <footer>
+        <!-- <p>© 2025 Josephine Yang</p> -->
+    </footer>
 </body>
