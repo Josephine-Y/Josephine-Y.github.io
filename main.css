@@ -97,6 +97,9 @@ a:hover {
     margin: 2em;
 }
 
+.contact {
+    margin: 4em;
+}
 .portfolio {
     background: var(--bg);
     padding: 2em;
@@ -152,6 +155,7 @@ a:hover {
     gap: 40px;
     margin: 10vw;
     margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 .project-info-box {
@@ -232,6 +236,8 @@ footer {
     margin: -2em;
 
 }
+
+
 
 /* Themes */
 .lawyer-theme {
