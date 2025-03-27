@@ -148,8 +148,15 @@ a:hover {
 }
 
 .project-article {
+    margin-top: 2em;
     text-align: center;
 
+}
+
+.project-article img {
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .date {
