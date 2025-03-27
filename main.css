@@ -79,6 +79,7 @@ a:hover {
     border-radius: 5px;
     text-decoration: none;
     margin-bottom: 1.5em;
+    cursor: pointer;
 }
 
 .about-me {
@@ -99,6 +100,14 @@ a:hover {
 
 .contact {
     margin: 4em;
+}
+
+.contact a {
+    color: var(--fontColor);
+}
+
+.contact a:hover {
+    color: var(--cHeader);
 }
 .portfolio {
     background: var(--bg);
